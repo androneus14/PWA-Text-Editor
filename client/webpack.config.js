@@ -6,25 +6,27 @@ const { InjectManifest } = require('workbox-webpack-plugin');
 module.exports = () => {
   return {
     mode: 'development',
+    // Entry point for files
     entry: {
       main: './src/js/index.js',
       install: './src/js/install.js'
     },
+    // Output for our bundles
     output: {
       filename: '[name].bundle.js',
       path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
-      // Webpack plugin that generates out html file and injects our bundles.
+      // Webpack plugin that generates our html file and injects our bundles. 
       new HtmlWebpackPlugin({
         template: './index.html',
         title: 'JATE'
       }),
-
-      // Injects our custom service worker.
+     
+      // Injects our custom service worker
       new InjectManifest({
         swSrc: './src-sw.js',
-        swDest: 'src-sw.js'
+        swDest: 'src-sw.js',
       }),
 
       // Creates a manifest.json file.
@@ -33,7 +35,7 @@ module.exports = () => {
         inject: true,
         name: 'Just Another Text Editor',
         short_name: 'JATE',
-        description: 'Text Editor created through PWAs',
+        description: 'Text editor powered with PWAs!',
         background_color: '#225ca3',
         theme_color: '#225ca3',
         start_url: './',
@@ -49,7 +51,7 @@ module.exports = () => {
     ],
 
     module: {
-      // CSS Loaders
+      // CSS loaders
       rules: [
         {
           test: /\.css$/i,
@@ -58,11 +60,11 @@ module.exports = () => {
         {
           test: /\.m?js$/,
           exclude: /node_modules/,
-          // Use babel-loader in order to use ES6.
+          // We use babel-loader in order to use ES6.
           use: {
             loader: 'babel-loader',
             options: {
-              presets: ['@babel/present-env'],
+              presets: ['@babel/preset-env'],
               plugins: ['@babel/plugin-proposal-object-rest-spread', '@babel/transform-runtime'],
             },
           },
