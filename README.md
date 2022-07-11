@@ -5,6 +5,9 @@
 - [Description](#description)
 - [User Story](#user-story)
 - [Acceptance Criteria](#acceptance-criteria)
+- [Installation](#installation)
+- [Technology](#technology)
+- [Links](#links)
 
 ## Description
 
@@ -43,3 +46,25 @@ Our task is to build a text editor that runs in the browser. The application wil
     THEN I should have my static assets pre cached upon loading along with subsequent pages and static assets
     WHEN I deploy to Heroku
     THEN I should have proper build scripts for a webpack application
+
+## Installation
+
+1. Run npm install through terminal
+2. Run npm run start through terminal
+3. Navigate to localhost:3000
+
+## Technology
+
+1. HTML
+2. CSS
+3. JavaScript
+4. Express
+5. Node.js
+6. NPM
+7. Webpack
+
+## Links
+
+Email: andynguyen_3@hotmail.com <br />
+Github: https://github.com/androneus14 <br />
+Deployed Application: <br />
