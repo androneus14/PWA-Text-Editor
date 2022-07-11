@@ -6,6 +6,7 @@
 - [User Story](#user-story)
 - [Acceptance Criteria](#acceptance-criteria)
 - [Installation](#installation)
+- [Screenshots](#screenshots)
 - [Technology](#technology)
 - [Links](#links)
 
@@ -53,6 +54,24 @@ Our task is to build a text editor that runs in the browser. The application wil
 2. Run npm run start through terminal
 3. Navigate to localhost:3000
 
+## Screenshots
+
+Homepage
+
+![JATE-Homepage](https://user-images.githubusercontent.com/98381243/178195131-2fe242fe-3872-4776-975f-2c9cd1bfeabf.png)
+
+Manifest
+
+![manifest](https://user-images.githubusercontent.com/98381243/178195170-4b46b6b3-241f-4102-9c85-dc6b624aca8c.png)
+
+Service Worker
+
+![service-worker](https://user-images.githubusercontent.com/98381243/178195326-577cc9fb-e8c7-40fe-ab10-280142106baf.png)
+
+IndexedDB
+
+![indexeddb storage](https://user-images.githubusercontent.com/98381243/178195353-381f2e0d-6a77-4571-b195-2c6659170ed4.png)
+
 ## Technology
 
 1. HTML
@@ -67,4 +86,4 @@ Our task is to build a text editor that runs in the browser. The application wil
 
 Email: andynguyen_3@hotmail.com <br />
 Github: https://github.com/androneus14 <br />
-Deployed Application: <br />
+Deployed Application: https://anpwa-texteditor.herokuapp.com/ <br />
